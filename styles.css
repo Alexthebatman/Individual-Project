@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.arrow-relative {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.mission-circle {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.mission-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-title {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.mission-date {
+  font-size: 1.4em;
+  color: #ccc;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+.circle img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.circle:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 5px orange;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.arrow-class {
+  position: absolute;
+  top: 12.5%;
+  bottom: 0;
+  left: 10;
+  right: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.arrow {
+  display: block;
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
