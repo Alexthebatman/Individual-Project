@@ -1,9 +1,35 @@
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   color: white;
+}
+.nav {
+  width: 25%;
+  max-width: 350px;
+  height: 80px;
+  background-color: #918989;
+  border: 6px double;
+  border-radius: 40px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #2b2d43;
 }
 
 .background-video {
@@ -16,27 +42,68 @@ html, body {
   z-index: -1;
 }
 
-.arrow-relative {
+/* Carousel stuff */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.carousel-container {
   position: relative;
-  margin: 0 auto;
-  padding: 2em 0;
+
+  width: 80%;
+  max-width: 800px;
+  overflow: visible;
+}
+
+.carousel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* Carousel hide the scroll bar on diff browsers */
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .mission-circle {
   display: flex;
   gap: 2em;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .mission-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  flex: 0 0 auto;
 }
 
+.arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  z-index: 10;
+}
+.arrow.arrow-left {
+  left: -80px;
+}
+.arrow.arrow-right {
+  right: -80px;
+}
 .mission-title {
   margin-bottom: 0.5em;
   font-size: 2em;
@@ -70,30 +137,4 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.arrow-class {
-  position: absolute;
-  top: 12.5%;
-  bottom: 0;
-  left: 10;
-  right: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
-}
-
-.arrow {
-  display: block;
-  font-size: 3em;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  z-index: 1;
-  pointer-events: auto;
-}
-
-.arrow:hover {
-  opacity: 0.7;
 }
