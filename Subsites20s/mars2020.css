@@ -1,0 +1,24 @@
+body {
+    background: #2e2e2e;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .bio-container {
+    background-color: black;   /* Or whatever background you prefer */ 
+    width: 7in;
+    height: 8in;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px 10px rgba(0, 76, 105, 0.8);
+    text-align: center;
+  }
+  
+  .title {
+    color: orange;
+    font-size: xxx-large;
+  }
