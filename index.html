@@ -1,69 +1,118 @@
-<!DOCTYPE html lang="en-US">
-<html>
-
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Individual Project</title>
-  <meta name="description" content="">
+  <title>NASA Missions Carousel</title>
+  <meta name="description" content="NASA Missions Carousel">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">Missions</a>
+    <a href="#">About</a>
+  </nav>
+
   <video class="background-video" autoplay muted loop>
     <source src="background-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div class="arrow-relative">
-  <div class="mission-circle">
-    <div class="mission-item">
-      <div class="mission-title">Mars 2020</div>
-      <div class="mission-date"> July 30, 2020</div>
-      <div class="circle"><img src="images/mars2020.avif" alt="Mars 2020 Rover"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">SpaceX Crew-1</div>
-      <div class="mission-date"> November 15th, 2020</div>
-      <div class="circle"><img src="images/spacex.jpeg" alt="Space X Falcon Heavy rocket"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">Lucy</div>
-      <div class="mission-date"> October 16th, 2021</div>
-      <div class="circle"><img src="images/lucy.png" alt="Lucy Spacecraft"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">DART</div>
-      <div class="mission-date"> November 24th, 2021</div>
-      <div class="circle"><img src="images/dart.jpg" alt="DART Spacecraft"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">JWST</div>
-      <div class="mission-date"> December 25th, 2021</div>
-      <div class="circle"><img src="images/james.webp" alt="James Webbs Space Telescope"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">CAPSTONE</div>
-      <div class="mission-date"> June 28th, 2022</div>
-      <div class="circle"><img src="images/capstone.webp" alt="Lucy Spacecraft"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">Artemis I</div>
-      <div class="mission-date"> November 16th, 2022</div>
-      <div class="circle"><img src="images/artemis.jpg" alt="Lucy Spacecraft"></div>
-    </div>
-    <div class="mission-item">
-      <div class="mission-title">SWOT</div>
-      <div class="mission-date"> December 16th, 2022</div>
-      <div class="circle"><img src="images/swot.jpg" alt="Lucy Spacecraft"></div>
-    </div>
-  </div>
-  </div>
+    <div class="carousel-wrapper">
 
-  <div class="arrow-class">
-    <div class="arrow arrow-left">&#9664;</div>
-    <div class="arrow arrow-right">&#9654;</div>
+     <div> class="carousel-container">
+              <button class="arrow arrow-left">&#9664;</button>
+     <div class="carousel">
+      <div class="mission-circle">
+
+        <div class="mission-item">
+          <div class="mission-title">Mars 2020</div>
+          <div class="mission-date">July 30, 2020</div>
+          <a href="Subsites20s/mars2020.html">
+          <div class="circle">
+            <img src="images/mars2020.avif" alt="Mars 2020 Rover">
+          </div>
+        </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">SpaceX Crew-1</div>
+          <div class="mission-date">November 15th, 2020</div>
+          <a href="Subsites20s/spacexcrew.html">
+          <div class="circle">
+            <img src="images/spacex.jpeg" alt="Space X Falcon Heavy rocket">
+          </div>
+          </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">Lucy</div>
+          <div class="mission-date">October 16th, 2021</div>
+          <a href="Subsites20s/lucy.html">
+          <div class="circle">
+            <img src="images/lucy.png" alt="Lucy Spacecraft">
+          </div>
+        </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">DART</div>
+          <div class="mission-date">November 24th, 2021</div>
+          <a href="Subsites20s/dart.html">
+          <div class="circle">
+            <img src="images/dart.jpg" alt="DART Spacecraft">
+          </div>
+          </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">JWST</div>
+          <div class="mission-date">December 25th, 2021</div>
+          <a href="Subsites20s/jwst.html">
+          <div class="circle">
+            <img src="images/james.webp" alt="James Webb Space Telescope">
+          </div>
+          </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">CAPSTONE</div>
+          <div class="mission-date">June 28th, 2022</div>
+          <a href="Subsites20s/capstone.html">
+          <div class="circle">
+            <img src="images/capstone.webp" alt="CAPSTONE Mission">
+          </div>
+          </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">Artemis I</div>
+          <div class="mission-date">November 16th, 2022</div>
+          <a href="Subsites20s/artemis.html">
+          <div class="circle">
+            <img src="images/artemis.jpg" alt="Artemis I">
+          </div>
+          </a>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-title">SWOT</div>
+          <div class="mission-date">December 16th, 2022</div>
+          <a href="Subsites20s/swot.html">
+          <div class="circle">
+            <img src="images/swot.jpg" alt="SWOT Mission">
+          </div>
+          </a>
+        </div>
+      
+      </div>
+       
+    </div>
+
+     <button class="arrow arrow-right">&#9654;</button>
   </div>
+</div>
 </body>
-
 </html>
