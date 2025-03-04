@@ -89,7 +89,7 @@ flex-flow: wrap row;
 }
 .mission-title {
   margin-bottom: 0.5em;
-  font-size: 2em;
+  font-size: clamp(1em, 2em, 5em);
   color: white;
   font-weight: bolder;
   text-align: center;
