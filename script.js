@@ -1,21 +1,17 @@
-function positionArrows() {
-    const circle = document.querySelector('.mission-item .circle img');
-    const arrowContainer = document.querySelector('.arrow-class');
-    const container = document.querySelector('.arrow-relative');
 
-    if (circle && arrowContainer && container) {
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const arrowLeft = document.querySelector('.arrow-left');
+    const arrowRight = document.querySelector('.arrow-right');
+  
+    arrowRight.addEventListener('click', () => {
 
-        const circleRect = circle.getBoundingClientRect();
+      carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+    });
+  
+    arrowLeft.addEventListener('click', () => {
 
-        const containerRect = container.getBoundingClientRect();
-
-        const circleCenter = circleRect.top + circleRect.height /2;
-
-        const relativeTop = circleCenter - containerRect.top;
-
-        arrowContainer.style.top = relativeTop + 'px';
-    }
-}
-
-window.addEventListener('load', positionArrows);
-window.addEventListener('resize', positionArrows);
+      carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+    });
+  });
+  
