@@ -50,34 +50,17 @@ html, body {
   height: calc(100vh - 80px);
 }
 
-.carousel-container {
-  position: relative;
-
-  width: 80%;
-  max-width: 800px;
-  overflow: visible;
-}
-
-.carousel {
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-/* Carousel hide the scroll bar on diff browsers */
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.mission-circle, .carousel-container {
+flex-flow: wrap row;
 }
 
 .mission-circle {
   display: flex;
-  gap: 2em;
   transition: transform 0.3s ease;
+}
+
+.circle {
+  margin: 10px;
 }
 
 .mission-item {
