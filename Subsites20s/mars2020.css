@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
-    background: #2e2e2e;
+    background-image: url('background.jpeg');
     color: white;
     font-family: sans-serif;
     display: flex;
@@ -11,7 +13,7 @@ body {
   
   .bio-container {
     background-color: black;   /* Or whatever background you prefer */ 
-    width: 7in;
+    width: 12in;
     height: 8in;
     border-radius: 10px; 
     box-shadow: 0 0 20px 10px rgba(0, 76, 105, 0.8);
@@ -19,6 +21,15 @@ body {
   }
   
   .title {
-    color: orange;
-    font-size: xxx-large;
+    font-size: 55px; 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
+
+    .gradient-text {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(197, 100%, 21%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; /* Keeps text centered */
+}
