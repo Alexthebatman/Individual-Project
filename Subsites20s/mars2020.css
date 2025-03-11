@@ -5,10 +5,12 @@ body {
     color: white;
     font-family: sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    position: relative;
   }
   
   .bio-container {
@@ -20,7 +22,7 @@ body {
     text-align: center;
   }
   
-  .title {
+  .title-container {
     font-size: 55px; 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -32,4 +34,88 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center; /* Keeps text centered */
+}
+
+.vertical-line {
+position: absolute;
+margin-top: 6.7in;
+left: 50%;
+right: 50%;
+transform: translate(-50%, -50%);
+width: 2px;
+height: 550px;
+background: white;
+}
+
+.image-container {
+  background-color: black;            /* Same background as bio-container */
+  border-radius: 10px;                /* Rounded corners */
+  box-shadow: 0 0 20px 10px rgba(0, 76, 105, 0.8);  /* Same blue glow effect */
+  overflow: hidden;
+  margin-top: -5px;                   /* Ensures the image doesn't overflow the container */
+  margin-left: 100px;                     /* Adjust spacing as needed */
+  /* Optionally, set a width and height for consistent sizing */
+  width: 300px;
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* This will crop the image to fill the container nicely */
+  display: block;
+}
+
+.image-container2 {
+  background-color: black;            /* Same background as bio-container */
+  border-radius: 10px;                /* Rounded corners */
+  box-shadow: 0 0 20px 10px rgba(0, 76, 105, 0.8);  /* Same blue glow effect */
+  overflow: hidden;
+  margin-top: 105px;                   /* Ensures the image doesn't overflow the container */
+  margin-left: 100px;                     /* Adjust spacing as needed */
+  /* Optionally, set a width and height for consistent sizing */
+  width: 300px;
+  height: 200px;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* This will crop the image to fill the container nicely */
+  display: block;
+}
+
+.launch {
+  position: absolute;
+  top: 29%;
+  right: 28%;
+  color: white;
+  font-size: 50px;
+}
+
+.duration {
+  position: absolute;
+  top: 35%;
+  right: 19.4%;
+  color: white;
+  font-size: 50px;
+}
+
+.landing {
+  position: absolute;
+  top: 41%;
+  right: 37.9%;
+  color: white;
+  font-size: 50px;
+}
+
+.bio {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 1.5;
+  position: absolute;
+  top: 41%;
+  right: 37.9%;
+  color: white;
+  font-size: 25px;
 }
